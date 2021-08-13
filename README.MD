@@ -10,3 +10,7 @@ https://www.pcg-random.org/index.html
 
 
 https://stackoverflow.com/questions/377454/how-do-i-get-my-python-program-to-sleep-for-50-milliseconds
+
+LINUX:
+
+NOTE: You must install tkinter on Linux to use MouseInfo. Run the following: sudo apt-get install python3-tk python3-dev
