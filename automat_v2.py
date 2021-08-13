@@ -3,7 +3,8 @@ from random import choice
 from numpy.random import randn
 from time import sleep
 from pyautogui import press
-from pyautogui import keyDown,keyUp
+from pyautogui import keyDown
+from pyautogui import keyUp
 
 import csv
 
@@ -28,21 +29,32 @@ with open('times.csv', 'w', encoding='UTF8', newline='') as f: # if we use with 
     writer = csv.writer(f)
     writer.writerow(header)
     for i in range(int(how_much_rolls)):
+        
         values = randn(10)
         addon= abs(choice(values))
         selection=choice(sequence) + addon
         # press('up')\
         keyDown('up')
-        sleep((randn(1)*(100-38)+38)/1000)
+
+        randoms = randn(10)
+        h_delay = abs(choice(randoms))
+        key_press_sim =((h_delay*(100-38)+38)/1000)
+        sleep(key_press_sim)
         keyUp('up')
+
         values = randn(10)
         addon= choice(values)
         selection2 = abs(choice(sequence2) + addon)
         sleep(selection2)
         # press('enter')
+
         keyDown('enter')
-        sleep((randn(1)*(100-38)+38)/1000)
+        randoms = randn(10)
+        h_delay = abs(choice(randoms))
+        key_press_sim =((h_delay*(100-38)+38)/1000)
+        sleep(key_press_sim)
         keyUp('enter')
+
         sleep(selection)
 
         data = [{f'{i+1}', f'{selection}' ,f'{selection2}' }] #didn't work properly
