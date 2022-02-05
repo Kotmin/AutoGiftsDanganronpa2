@@ -1,3 +1,15 @@
+
+
+
+You need to know that this simple script is not a free Steam achievements achiever.
+
+This is just a simple project to improve my programming skills.
+
+You use it at your own risk.
+--------------
+
+SOURCES AND NOTES
+---------------
 I see potential for a pure shell version
 
 
@@ -21,3 +33,9 @@ This will produce an array of shape (50,) with a uniform distribution between 0.
 LINUX:
 
 NOTE: You must install tkinter on Linux to use MouseInfo. Run the following: sudo apt-get install python3-tk python3-dev
+
+
+-------------------------------------------
+
+
+
