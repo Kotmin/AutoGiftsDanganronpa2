@@ -12,7 +12,7 @@ SOURCES AND NOTES
 ---------------
 I see potential for a pure shell version
 
-
+Csv file generator part is not finished
 
 https://machinelearningmastery.com/how-to-generate-random-numbers-in-python/
 
